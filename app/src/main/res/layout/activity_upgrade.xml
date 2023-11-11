@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".ui_activity.ShopActivity">
+
+
+    <ImageView
+        android:id="@+id/shopImage"
+        android:layout_width="550dp"
+        android:layout_height="220dp"
+        android:contentDescription="@string/shopimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen_shot_2022_03_05_at_2_21_47_pm"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/damageUpgradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/damage"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/rangeUpgradeButton"
+        app:layout_constraintStart_toStartOf="@+id/rangeUpgradeButton" />
+
+    <Button
+        android:id="@+id/firingRateUpgradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/firing_rate"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/statusEffectUpgradeButton"
+        app:layout_constraintStart_toStartOf="@+id/statusEffectUpgradeButton" />
+
+    <Button
+        android:id="@+id/rangeUpgradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/range"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/upgradePriceText"
+        app:layout_constraintEnd_toStartOf="@+id/statusEffectUpgradeButton" />
+
+    <Button
+        android:id="@+id/statusEffectUpgradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Status Effect"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/upgradePriceText" />
+
+    <Button
+        android:id="@+id/xButton3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/x"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/gameOverText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-thin"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1.6"
+        android:text="Upgrade Tower"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firingRateButton"
+        app:layout_constraintEnd_toStartOf="@+id/xButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/upgradePriceText"
+        android:layout_width="111dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-thin"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.6"
+        android:text="@string/price"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/shopImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusEffectUpgradeButton" />
+
+    <TextView
+        android:id="@+id/towerDamageText"
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.6"
+        android:text="0"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/damageUpgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/towerFiringRateText"
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.6"
+        android:text="0"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/firingRateUpgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/towerRangeText"
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.6"
+        android:text="0"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rangeUpgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/towerStatusEffectText"
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.6"
+        android:text="0"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/statusEffectUpgradeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

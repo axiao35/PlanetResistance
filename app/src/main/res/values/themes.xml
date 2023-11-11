@@ -1,0 +1,4 @@
+<resources>
+    <style name="Theme.M2" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="myDialog" parent="@style/Theme.AppCompat.Dialog.Alert" />
+</resources>

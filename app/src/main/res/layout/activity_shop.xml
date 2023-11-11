@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".ui_activity.ShopActivity">
+
+    <ImageView
+        android:id="@+id/shopImage"
+        android:layout_width="381dp"
+        android:layout_height="216dp"
+        android:contentDescription="@string/shopimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen_shot_2022_03_05_at_2_21_47_pm"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/normalButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/normal"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/shopImage"
+        app:layout_constraintTop_toTopOf="@+id/shopImage" />
+
+    <Button
+        android:id="@+id/sniperTowerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/sniper"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/shopImage"
+        app:layout_constraintTop_toTopOf="@+id/shopImage" />
+
+    <Button
+        android:id="@+id/assassinTowerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/assassin"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopImage"
+        app:layout_constraintStart_toStartOf="@+id/shopImage" />
+
+    <Button
+        android:id="@+id/gravityTowerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/gravity"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopImage"
+        app:layout_constraintEnd_toEndOf="@+id/shopImage" />
+
+    <Button
+        android:id="@+id/xButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/x"
+        android:textColor="#FFEB3B"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/shopImage"
+        app:layout_constraintTop_toTopOf="@+id/shopImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

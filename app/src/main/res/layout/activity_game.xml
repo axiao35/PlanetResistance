@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242829"
+    tools:context=".game.GameActivity">
+
+    <com.example.PlanetResistance.map.MapSurfaceView
+        android:id="@+id/mapSurfaceView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="448:768"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/shop"
+        app:layout_constraintBottom_toBottomOf="@id/mapSurfaceView"
+        app:layout_constraintStart_toStartOf="@id/mapSurfaceView" />
+
+    <Button
+        android:id="@+id/startButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="@id/mapSurfaceView"
+        app:layout_constraintEnd_toEndOf="@id/mapSurfaceView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
